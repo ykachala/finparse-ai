@@ -183,7 +183,7 @@ GET    /health                    # Health check
 ## Getting started
 
 ```bash
-git clone https://github.com/joel767443/finparse-ai.git
+git clone https://github.com/ykachala/finparse-ai.git
 cd finparse-ai
 cp .env.example .env
 # Add ANTHROPIC_API_KEY and AWS credentials
@@ -276,8 +276,8 @@ finparse-ai/
 
 ## Related
 
-- [devpulse](https://github.com/joel767443/devpulse) — same Claude structured extraction pattern, applied to GitHub activity  
-- [hookstream](https://github.com/joel767443/hookstream) — can deliver `document.parsed` events to downstream systems
+- [devpulse](https://github.com/ykachala/devpulse) — same Claude structured extraction pattern, applied to GitHub activity  
+- [hookstream](https://github.com/ykachala/hookstream) — can deliver `document.parsed` events to downstream systems
 
 ---
 
