@@ -1,0 +1,59 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "finparse-ai"
+version = "0.1.0"
+description = "AI-powered financial document parser. Upload an invoice, bank statement, or receipt — get structured, queryable data."
+readme = "README.md"
+requires-python = ">=3.12"
+authors = [{ name = "Yoweli Kachala" }]
+license = { text = "MIT" }
+dependencies = [
+    "fastapi>=0.109.0",
+    "uvicorn[standard]>=0.27.0",
+    "pydantic>=2.5.0",
+    "pydantic-settings>=2.1.0",
+    "anthropic>=0.20.0",
+    "sqlalchemy>=2.0.25",
+    "alembic>=1.13.1",
+    "asyncpg>=0.29.0",
+    "psycopg2-binary>=2.9.9",
+    "celery[redis]>=5.3.6",
+    "redis>=5.0.1",
+    "boto3>=1.34.0",
+    "pdf2image>=1.17.0",
+    "Pillow>=10.2.0",
+    "python-multipart>=0.0.9",
+    "python-jose[cryptography]>=3.3.0",
+    "httpx>=0.26.0",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=8.0.0",
+    "pytest-asyncio>=0.23.0",
+    "pytest-cov>=4.1.0",
+    "pytest-mock>=3.12.0",
+    "moto[s3]>=5.0.0",
+    "ruff>=0.2.0",
+    "mypy>=1.8.0",
+    "boto3-stubs[s3]>=1.34.0",
+    "faker>=22.0.0",
+]
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+select = ["E", "W", "F", "I", "UP", "N", "B"]
+ignore = ["B008"]
+
+[tool.mypy]
+python_version = "3.12"
+strict = true
+ignore_missing_imports = true
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["tests"]
