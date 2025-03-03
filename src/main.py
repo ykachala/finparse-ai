@@ -14,14 +14,15 @@ logger = logging.getLogger(__name__)
 
 @asynccontextmanager
 async def lifespan(app: FastAPI) -> AsyncGenerator[None, None]:
+    """Initialize and tear down application resources."""
     from src.config import get_settings
     from src.storage.database import init_db
 
     settings = get_settings()
     init_db(settings.database_url)
-    logger.info("Database initialized")
+    logger.info("Database session factory initialized")
     yield
-    logger.info("Application shutdown")
+    logger.info("Application shutdown complete")
 
 
 def create_app() -> FastAPI:
