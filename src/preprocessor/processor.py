@@ -1,4 +1,13 @@
-"""Document preprocessor: PDF-to-image conversion and image normalisation pipeline."""
+"""
+Document preprocessor: PDF-to-image conversion and image normalisation pipeline.
+
+Pipeline overview:
+  raw bytes → PDF-to-images (pdf2image) → normalise each page
+              ↓
+  normalise: RGB conversion → contrast enhancement (1.3x) → sharpening → deskew
+              ↓
+  output: list of ProcessedPage (JPEG bytes + base64 for Claude API)
+"""
 
 import base64
 import io
