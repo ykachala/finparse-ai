@@ -240,7 +240,7 @@ Tested against 500 South African invoices and bank statements:
 
 | Document type | Field extraction accuracy | Amount validation pass rate |
 |---------------|--------------------------|----------------------------|
-| Invoices (PDF, clean) | 96.4% | 98.1% |
+| Invoices (PDF, clean) | 96.1% | 98.1% |
 | Invoices (scanned) | 89.2% | 94.7% |
 | Bank statements | 97.8% | 99.2% |
 | Receipts | 91.3% | 95.6% |
