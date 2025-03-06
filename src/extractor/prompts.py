@@ -197,6 +197,56 @@ Extract all earnings and deduction line items. Amounts must be numeric.
 """
 
 
+def get_quote_prompt() -> str:
+    """
+    Return the extraction prompt for quote/estimate documents.
+
+    Schema: vendor, document_meta, line_items[], totals, document_type, confidence
+    Similar structure to invoices but document_type is 'quote'.
+    """
+    return """You are a financial document extraction system. Analyse the quote/estimate image and extract ALL data.
+
+Return ONLY a valid JSON object — no explanation, no markdown outside the JSON block.
+
+Required JSON schema:
+{
+  "document_type": "quote",
+  "confidence": <float 0.0-1.0>,
+  "vendor": {
+    "name": "<company name>",
+    "registration_number": "<registration number or null>",
+    "vat_number": "<VAT number or null>",
+    "address": "<full address or null>",
+    "bank_details": {"bank": null, "account_number": null, "branch_code": null}
+  },
+  "document_meta": {
+    "quote_number": "<quote number>",
+    "quote_date": "<ISO 8601 date YYYY-MM-DD>",
+    "valid_until": "<ISO 8601 date or null>",
+    "payment_terms": "<e.g. '50% deposit' or null>"
+  },
+  "line_items": [
+    {
+      "description": "<description>",
+      "quantity": <number>,
+      "unit_price": <number>,
+      "vat_rate": <decimal or null>,
+      "vat_amount": <number or null>,
+      "total": <number>
+    }
+  ],
+  "totals": {
+    "subtotal": <subtotal>,
+    "vat": <VAT total or null>,
+    "total": <grand total>,
+    "currency": "<3-letter ISO code>"
+  }
+}
+
+Extract every line item. Amounts must be numeric.
+"""
+
+
 def get_auto_detect_prompt() -> str:
     """
     Return the prompt used when document_hint is None.
