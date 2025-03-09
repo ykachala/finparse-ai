@@ -248,6 +248,8 @@ Tested against 500 South African invoices and bank statements:
 
 Low-confidence extractions are flagged automatically and excluded from accuracy figures.
 
+Evaluation harness: [`scripts/evaluate.py`](scripts/evaluate.py) — runs the full extraction pipeline against an annotated corpus and prints this table. Ground-truth fixtures in [`tests/fixtures/`](tests/fixtures/) are a representative public sample; the full 500-document corpus is not checked in (confidential client documents from SA fintech integrations).
+
 ---
 
 ## Project structure
