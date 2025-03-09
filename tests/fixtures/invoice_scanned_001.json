@@ -1,0 +1,73 @@
+{
+  "document_type": "invoice",
+  "confidence": 0.91,
+  "vendor": {
+    "name": "Khumalo & Associates Consulting CC",
+    "registration_number": "2011/203847/23",
+    "vat_number": "4127834901",
+    "address": "Block B, Northgate Office Park, Randburg, Johannesburg, 2169",
+    "email": "finance@khumaloassoc.co.za",
+    "bank_details": {
+      "bank": "ABSA",
+      "account_number": "4087293015",
+      "branch_code": "632005",
+      "account_type": "Business Cheque"
+    }
+  },
+  "document_meta": {
+    "invoice_number": "KA/2025/0297",
+    "invoice_date": "2025-01-31",
+    "due_date": "2025-03-02",
+    "payment_terms": "30 days",
+    "purchase_order": null
+  },
+  "bill_to": {
+    "name": "Pinnacle Risk Management (Pty) Ltd",
+    "registration_number": "2018/341209/07",
+    "vat_number": "4301827465",
+    "address": "55 Wierda Road East, Wierda Valley, Sandton, 2196"
+  },
+  "line_items": [
+    {
+      "description": "Risk assessment and compliance report — Q4 2024",
+      "quantity": 1,
+      "unit_price": 32500.00,
+      "vat_rate": 0.15,
+      "vat_amount": 4875.00,
+      "total": 37375.00
+    },
+    {
+      "description": "Board presentation — 2 days on-site",
+      "quantity": 2,
+      "unit_price": 8500.00,
+      "vat_rate": 0.15,
+      "vat_amount": 2550.00,
+      "total": 19550.00
+    },
+    {
+      "description": "Travel and disbursements (Johannesburg)",
+      "quantity": 1,
+      "unit_price": 1240.00,
+      "vat_rate": 0.15,
+      "vat_amount": 186.00,
+      "total": 1426.00
+    }
+  ],
+  "totals": {
+    "subtotal": 49240.00,
+    "vat": 7611.00,
+    "total": 56851.00,
+    "currency": "ZAR"
+  },
+  "validation": {
+    "amounts_balance": false,
+    "vat_calculation_correct": true,
+    "flags": [
+      "subtotal_mismatch: line items sum to 49240.00 but header shows 49200.00 (likely OCR error on printed total)"
+    ]
+  },
+  "_extraction_notes": {
+    "low_confidence_fields": ["vendor.address", "document_meta.due_date"],
+    "ocr_warnings": ["ink bleed on subtotal row", "partial header crop — vendor logo obscured registration text"]
+  }
+}

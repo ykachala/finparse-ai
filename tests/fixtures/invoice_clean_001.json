@@ -1,0 +1,59 @@
+{
+  "document_type": "invoice",
+  "confidence": 0.98,
+  "vendor": {
+    "name": "TechForce Solutions (Pty) Ltd",
+    "registration_number": "2017/312456/07",
+    "vat_number": "4180291834",
+    "address": "Unit 4, Innovation Park, Century City, Cape Town, 7441",
+    "email": "accounts@techforce.co.za",
+    "bank_details": {
+      "bank": "First National Bank",
+      "account_number": "62847291034",
+      "branch_code": "250655",
+      "account_type": "Business Current"
+    }
+  },
+  "document_meta": {
+    "invoice_number": "INV-2025-00134",
+    "invoice_date": "2025-02-28",
+    "due_date": "2025-03-30",
+    "payment_terms": "30 days",
+    "purchase_order": "PO-2025-0089"
+  },
+  "bill_to": {
+    "name": "Meridian Capital Group (Pty) Ltd",
+    "registration_number": "2015/089234/07",
+    "vat_number": "4212876541",
+    "address": "12th Floor, The Towers, Sandton, Johannesburg, 2196"
+  },
+  "line_items": [
+    {
+      "description": "Software development — payment gateway integration (February 2025)",
+      "quantity": 1,
+      "unit_price": 78000.00,
+      "vat_rate": 0.15,
+      "vat_amount": 11700.00,
+      "total": 89700.00
+    },
+    {
+      "description": "Server infrastructure (AWS) — February 2025",
+      "quantity": 1,
+      "unit_price": 4200.00,
+      "vat_rate": 0.15,
+      "vat_amount": 630.00,
+      "total": 4830.00
+    }
+  ],
+  "totals": {
+    "subtotal": 82200.00,
+    "vat": 12330.00,
+    "total": 94530.00,
+    "currency": "ZAR"
+  },
+  "validation": {
+    "amounts_balance": true,
+    "vat_calculation_correct": true,
+    "flags": []
+  }
+}

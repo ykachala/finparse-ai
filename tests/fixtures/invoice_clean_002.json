@@ -1,0 +1,67 @@
+{
+  "document_type": "invoice",
+  "confidence": 0.97,
+  "vendor": {
+    "name": "Bright Spark Electrical (Pty) Ltd",
+    "registration_number": "2020/445781/07",
+    "vat_number": "4290182736",
+    "address": "32 Voortrekker Road, Bellville, Cape Town, 7530",
+    "email": "billing@brightspark.co.za",
+    "bank_details": {
+      "bank": "Nedbank",
+      "account_number": "1089276543",
+      "branch_code": "198765",
+      "account_type": "Business Current"
+    }
+  },
+  "document_meta": {
+    "invoice_number": "BS-2025-441",
+    "invoice_date": "2025-02-14",
+    "due_date": "2025-03-14",
+    "payment_terms": "30 days",
+    "purchase_order": null
+  },
+  "bill_to": {
+    "name": "Oakwood Properties CC",
+    "registration_number": "2008/112345/23",
+    "vat_number": null,
+    "address": "45 Buitenkant Street, Gardens, Cape Town, 8001"
+  },
+  "line_items": [
+    {
+      "description": "Electrical fault investigation and repair — DB board",
+      "quantity": 1,
+      "unit_price": 1850.00,
+      "vat_rate": 0.15,
+      "vat_amount": 277.50,
+      "total": 2127.50
+    },
+    {
+      "description": "Replace 3x 20A circuit breakers",
+      "quantity": 3,
+      "unit_price": 285.00,
+      "vat_rate": 0.15,
+      "vat_amount": 128.25,
+      "total": 983.25
+    },
+    {
+      "description": "Call-out fee (after hours)",
+      "quantity": 1,
+      "unit_price": 650.00,
+      "vat_rate": 0.15,
+      "vat_amount": 97.50,
+      "total": 747.50
+    }
+  ],
+  "totals": {
+    "subtotal": 3355.00,
+    "vat": 503.25,
+    "total": 3858.25,
+    "currency": "ZAR"
+  },
+  "validation": {
+    "amounts_balance": true,
+    "vat_calculation_correct": true,
+    "flags": []
+  }
+}

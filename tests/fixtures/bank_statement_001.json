@@ -1,0 +1,108 @@
+{
+  "document_type": "bank_statement",
+  "confidence": 0.97,
+  "account": {
+    "bank": "Standard Bank",
+    "account_holder": "Khumalo Trading CC",
+    "account_number": "0027849163",
+    "branch_code": "051001",
+    "account_type": "Business Current"
+  },
+  "statement_period": {
+    "from": "2025-02-01",
+    "to": "2025-02-28"
+  },
+  "opening_balance": 45234.18,
+  "closing_balance": 71065.93,
+  "transactions": [
+    {
+      "date": "2025-02-03",
+      "description": "PAYMENT RECEIVED REF MERIDIAN CAP 00134",
+      "debit": null,
+      "credit": 94530.00,
+      "balance": 139764.18,
+      "category": "income"
+    },
+    {
+      "date": "2025-02-04",
+      "description": "MONTHLY ACCOUNT FEE",
+      "debit": 195.00,
+      "credit": null,
+      "balance": 139569.18,
+      "category": "bank_charges"
+    },
+    {
+      "date": "2025-02-05",
+      "description": "PROM RENTALS EFT",
+      "debit": 28000.00,
+      "credit": null,
+      "balance": 111569.18,
+      "category": "rent"
+    },
+    {
+      "date": "2025-02-07",
+      "description": "SALARIES EFT PAYROLL 202502",
+      "debit": 38500.00,
+      "credit": null,
+      "balance": 73069.18,
+      "category": "payroll"
+    },
+    {
+      "date": "2025-02-10",
+      "description": "SARS EFT PAYE 202502",
+      "debit": 8400.00,
+      "credit": null,
+      "balance": 64669.18,
+      "category": "tax"
+    },
+    {
+      "date": "2025-02-14",
+      "description": "BRIGHT SPARK ELECTRICAL EFT",
+      "debit": 3858.25,
+      "credit": null,
+      "balance": 60810.93,
+      "category": "maintenance"
+    },
+    {
+      "date": "2025-02-20",
+      "description": "RECHARGE TELKOM BUSINESS",
+      "debit": 1450.00,
+      "credit": null,
+      "balance": 59360.93,
+      "category": "utilities"
+    },
+    {
+      "date": "2025-02-26",
+      "description": "PAYMENT RECEIVED REF OAKWOOD PROP",
+      "debit": null,
+      "credit": 12000.00,
+      "balance": 71360.93,
+      "category": "income"
+    },
+    {
+      "date": "2025-02-28",
+      "description": "MONTHLY CARD FEE",
+      "debit": 180.00,
+      "credit": null,
+      "balance": 71180.93,
+      "category": "bank_charges"
+    },
+    {
+      "date": "2025-02-28",
+      "description": "INTERNET BANKING FEE",
+      "debit": 115.00,
+      "credit": null,
+      "balance": 71065.93,
+      "category": "bank_charges"
+    }
+  ],
+  "summary": {
+    "total_credits": 106530.00,
+    "total_debits": 80698.25,
+    "transaction_count": 10
+  },
+  "validation": {
+    "balance_continuity": true,
+    "flags": []
+  }
+}

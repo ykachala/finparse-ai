@@ -1,0 +1,50 @@
+{
+  "document_type": "receipt",
+  "confidence": 0.95,
+  "merchant": {
+    "name": "Builders Warehouse",
+    "branch": "Milnerton, Cape Town",
+    "vat_number": "4020166783",
+    "address": "Koeberg Road, Milnerton, Cape Town, 7435"
+  },
+  "document_meta": {
+    "receipt_number": "00243-19827364",
+    "transaction_date": "2025-02-18",
+    "transaction_time": "14:23",
+    "cashier": "T. SWANEPOEL"
+  },
+  "line_items": [
+    {
+      "description": "ROMABIO 20L MASONRY PAINT WHITE",
+      "quantity": 2,
+      "unit_price": 489.00,
+      "vat_inclusive": true,
+      "total": 978.00
+    },
+    {
+      "description": "3MM DIAMOND BLADE 230MM",
+      "quantity": 1,
+      "unit_price": 129.00,
+      "vat_inclusive": true,
+      "total": 129.00
+    },
+    {
+      "description": "RUST INHIBITOR PRIMER 5L",
+      "quantity": 1,
+      "unit_price": 265.00,
+      "vat_inclusive": true,
+      "total": 265.00
+    }
+  ],
+  "totals": {
+    "subtotal_incl_vat": 1372.00,
+    "vat_included": 178.96,
+    "total": 1372.00,
+    "currency": "ZAR",
+    "payment_method": "card"
+  },
+  "validation": {
+    "amounts_balance": true,
+    "flags": []
+  }
+}
