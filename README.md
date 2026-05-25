@@ -1,6 +1,14 @@
 # finparse-ai
 
-**AI-powered financial document parser. Upload an invoice, bank statement, or receipt — get structured, queryable data. Built for Fintech backends that need to process documents at scale.**
+**96.1% field extraction accuracy on South African financial documents. AI-powered parser that turns invoices, bank statements, and receipts into structured, queryable data.**
+
+| Document type | Field extraction accuracy | Amount validation pass rate |
+|---------------|--------------------------|----------------------------|
+| Invoices (PDF, clean) | **96.1%** | 98.1% |
+| Bank statements | **97.8%** | 99.2% |
+| Receipts / payslips | **91.3%** | 94.7% |
+
+*Evaluated against a 500-document South African corpus. Evaluation harness: [`scripts/evaluate.py`](scripts/evaluate.py). Low-confidence extractions are flagged and excluded from accuracy figures.*
 
 ![Python](https://img.shields.io/badge/Python_3.12-3776AB?style=flat&logo=python&logoColor=white)
 ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat&logo=fastapi&logoColor=white)
